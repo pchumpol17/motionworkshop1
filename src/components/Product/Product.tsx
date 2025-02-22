@@ -1,7 +1,6 @@
 "use client"
 
-import {motion} from "framer-motion"
-import { div } from "framer-motion/client"
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 interface ProductType {
