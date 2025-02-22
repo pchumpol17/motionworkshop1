@@ -9,9 +9,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#f19509",
+        primaryDark: "#e86f00",
+        lightOrange: "#f1dabf",
+        darkGray: "#1a1f25",
+        lightGray: "#272c35"
       },
+      container: {
+        center: true, //ให้ container แนวนอนอยู่ตรงกลาง หรือ 0 auto นั่นเอง
+        padding: {
+          DEFAULT: "1rem",  //กำหนดให้ container มี padding เป็น default คือ 1rem = 16px
+          sm: "2rem"
+        }
+      }
     },
   },
   plugins: [],

@@ -17,5 +17,24 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-kanit)
+}
+
+/* สร้างคุณสมบัติของ css */
+@layer utilities { 
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115) /* x y,ฟุ้ง สี*/
+  }
+
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 25px #0f1115);
+  }
+
+  .input-style {
+    @apply px-4 py-2 rounded-md text-white
+  }
+
+  .primary-btn {
+    @apply px-4 py-2 rounded-md bg-primary text-white
+  }
 }
